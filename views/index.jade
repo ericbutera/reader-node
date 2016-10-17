@@ -1,0 +1,33 @@
+!!! 5
+html(lang="en")
+  head
+    title= pageTitle
+    link(rel='stylesheet', href='/css/reader.css', type='text/css', media='all')
+    link(rel='stylesheet', href='/css/Aristo/jquery-ui-1.8.7.custom.css', type='text/css', media='all')
+    // link(rel='stylesheet', href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css', type='text/css', media='all')
+
+    script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js')
+    script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js')
+    script(type='text/javascript', src='socket.io/socket.io.js')
+    script(type='text/javascript', src='/js/step.js')
+    script(type='text/javascript', src='/js/reader.js')
+
+  body
+    #main
+      #header
+        .inner
+          h1 Reader
+      #subheader
+          !=partial('_add')
+      #content-container
+        #content
+          #subarea
+          #accordion
+            !=partial('_fakedata')
+      #sidebar
+        .inner
+          !=partial('_subscriptions')
+      #footer
+        .inner
+          bai
+

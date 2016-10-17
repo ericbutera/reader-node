@@ -1,0 +1,28 @@
+{
+  "name": "reader-node",
+  "description": "RSS Reader",
+  "version": "0.0.0",
+  "repository": {
+    "url": ""
+  },
+  "author": "Eric Butera <eric@ericbutera.com> (http://ericbutera.com/)",
+  "dependencies":{
+    "express": ">= 1.0.0",
+    "socket.io": ">= 0.6.16",
+    "jade": ">= 0.10.0",
+    "iniparser": ">= 1.0.3",
+    "mongoose": ">= 1.1.24",
+    "webworker": ">= 0.8.3",
+    "underscore": ">= 1.1.5",
+    "step": ">= 0.0.4",
+    "sax": "<= 0.1.2",
+    "ain": "<= 0.0.1",
+    "request": "<= 1.9.6"
+  },
+  "directories": {
+    "lib": "."
+  },
+  "engines": {
+    "node": "*"
+  }
+}

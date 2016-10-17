@@ -1,0 +1,15 @@
+h2
+  = subscription.title
+// a(href='/subscription/'+ subscription.id, rel=subscription.id, class='edit-button') Edit
+input(type='button', class='edit-button', value='Edit')
+br(clear='all')
+#edit
+  form(method='post', action='/subscription/' + subscription.id)
+    input(name='_method', value='put', type='hidden')
+    label(for='title') Title
+    input(name='title', id='title', value=subscription.title)
+
+    label(for='feedUrl') Subscribe
+    input(name='feedUrl', id='feedUrl', value=subscription.feedUrl)
+
+    input(type='submit', value='Update')

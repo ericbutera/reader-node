@@ -1,0 +1,79 @@
+body {
+  padding: 0;
+  margin: 0;
+  font: 12px "Lucida Grande", "Helvetica Nueue", Arial, sans-serif;
+  line-height: 1.5em;
+}
+
+#header {
+  height: 35px;
+}
+
+#content-container {
+  float: left;
+  width: 100%;
+}
+#content {
+  margin-left: 205px;
+}
+#subarea {
+  background-color: #d4d4d4;
+  border: 1px solid #b6b6b6;
+}
+#subarea h2 {
+  font-size: 12px;
+  display: inline;
+}
+#subarea .edit-button {
+  float:right;
+  font-size: 9px;
+}
+#sidebar {
+  background-color: #d4d4d4;
+  border: 1px solid #b6b6b6;
+  float: left;
+  width: 200px;
+  margin-left: -100%;
+}
+#subscriptions-container ul {
+  list-style: none;
+  margin: 0; 
+  padding: 0;
+}
+#subscriptions-container li {
+  margin: 0; padding: 0;
+  height: 25px;
+}
+#subscriptions-container li a {
+  vertical-align: middle;
+  padding-left: 5px;
+  text-decoration: none;
+  color: #000;
+}
+#subscriptions-container {
+  overflow: auto;
+}
+
+
+#accordion {
+  border: none;
+  outline: none;
+  font-size: 108%;
+  float: right;
+  clear: both;
+  margin: 0;
+  width: 100%;
+}
+
+#footer{
+  clear: left;
+  width: 100%;
+  text-align: center;
+  padding: 4px 0;
+}
+
+.inner {
+  vertical-align: top;
+  margin: 10px;
+  margin-top: 0;
+}

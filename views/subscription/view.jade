@@ -1,0 +1,5 @@
+ul#subscriptions
+  - for (var s in subscriptions)
+    li 
+      a(href='/subscription/' + subscriptions[s].id, class='feed', rel=subscriptions[s].id)
+        = subscriptions[s].title
